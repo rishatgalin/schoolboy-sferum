@@ -5,12 +5,12 @@ export namespace Service {
     return client.get<unknown>("/v2/external-partners/list");
   }
 
-  export function getChoice() {
-    return client.get<unknown>("/choice/partners", {
-      params: {
-        auto_connect: "vk",
-        return_url: window.location.origin
-      }
-    });
-  }
+  // export function getChoice() {
+  //   return client.get<unknown>("/choice/partners", {
+  //     params: {
+  //       auto_connect: "vk",
+  //       return_url: window.location.origin
+  //     }
+  //   });
+  // }
 }

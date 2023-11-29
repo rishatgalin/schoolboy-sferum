@@ -26,6 +26,7 @@ const connect = async () => {
       `https://ms-edu.tatar.ru/choice/partners?auto_connect=vk&return_url=${window.location.href}`
     )
   } catch (error) {
+    console.log(error);
     alert("Ошибка")
   }
 }
