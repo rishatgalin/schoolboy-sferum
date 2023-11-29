@@ -23,7 +23,7 @@ const connect = async () => {
   try {
     // const { data } = await Service.getChoice();
     window.location.replace(
-      `https://ms-edu.tatar.ru/choice/partners?auto_connect=vk&return_url=${window.location.href}`
+      `https://ms-edu.tatar.ru/choice/partners?return_url=dnevnik-mes://authRegionRedirect`
     )
   } catch (error) {
     console.log(error);
