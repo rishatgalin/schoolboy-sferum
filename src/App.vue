@@ -21,7 +21,10 @@ const redirectToSferum = () => {
 }
 const connect = async () => {
   try {
-    const { data } = await Service.getChoice();
+    // const { data } = await Service.getChoice();
+    window.location.replace(
+      `https://ms-edu.tatar.ru/choice/partners?auto_connect=vk&return_url=${window.location.href}`
+    )
   } catch (error) {
     alert("Ошибка")
   }
